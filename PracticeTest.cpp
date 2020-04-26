@@ -95,8 +95,11 @@ TEST(PracticeTest, sort_increasing_first)
 {
     Practice obj;
 		bool actual;
+		int frst = 1;
+		int scnd = 3;
+		int thrd = 5;
 		obj.sortDescending(1,3,5);
-    if ( (obj.first >= obj.second) || (obj.second >= obj.third) ) {
+    if ( (frst >= scnd) || (scnd >= thrd) ) {
 				ASSERT_TRUE(actual);
 		}
 		else {
