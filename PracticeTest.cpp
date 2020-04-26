@@ -106,3 +106,19 @@ TEST(PracticeTest, sort_increasing_first)
 			ASSERT_FALSE(actual);
 		}
 }
+
+TEST(PracticeTest, sort_increasing_second)
+{
+    Practice obj;
+		bool actual;
+		int frst = 5;
+		int scnd = 2;
+		int thrd = 8;
+		obj.sortDescending(frst,scnd,thrd);
+    if ( (frst >= scnd) || (scnd >= thrd) ) {
+				ASSERT_TRUE(actual);
+		}
+		else {
+			ASSERT_FALSE(actual);
+		}
+}
