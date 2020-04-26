@@ -69,3 +69,10 @@ TEST(PracticeTest, is_palindromefourLetterCaps)
     bool actual = obj.isPalindrome("AbBa");
     ASSERT_TRUE(actual);
 }
+
+TEST(PracticeTest, is_palindromeFiveLetterMix)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("ABcBA");
+    ASSERT_TRUE(actual);
+}
