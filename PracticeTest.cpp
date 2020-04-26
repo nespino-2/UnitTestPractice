@@ -76,3 +76,10 @@ TEST(PracticeTest, is_palindromeFiveLetterMix)
     bool actual = obj.isPalindrome("ABcBA");
     ASSERT_TRUE(actual);
 }
+
+TEST(PracticeTest, is_NotPalFiveLetterMix)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("ABcdA");
+    ASSERT_FALSE(actual);
+}
