@@ -27,3 +27,24 @@ TEST(PracticeTest, is_not_palindrome)
     bool actual = obj.isPalindrome("Ca");
     ASSERT_FALSE(actual);
 }
+
+TEST(PracticeTest, is_palindrome_oneLetter)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("a");
+    ASSERT_TRUE(actual);
+}
+
+TEST(PracticeTest, is_palindrome_threeLetter)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("cdc");
+    ASSERT_TRUE(actual);
+}
+
+TEST(PracticeTest, is_palindromefourLetter)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("abba");
+    ASSERT_TRUE(actual);
+}
