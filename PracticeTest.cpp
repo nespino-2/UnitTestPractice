@@ -138,3 +138,20 @@ TEST(PracticeTest, sort_increasing_third)
 			ASSERT_FALSE(actual);
 		}
 }
+
+
+TEST(PracticeTest, sort_increasing_fourth)
+{
+    Practice obj;
+		bool actual;
+		int frst = 3;
+		int scnd = 1;
+		int thrd = 6;
+		obj.sortDescending(frst,scnd,thrd);
+    if ( (frst >= scnd) || (scnd >= thrd) ) {
+				ASSERT_TRUE(actual);
+		}
+		else {
+			ASSERT_FALSE(actual);
+		}
+}
