@@ -90,3 +90,16 @@ TEST(PracticeTest, is_NotPalFiveLetterMix)
     bool actual = obj.isPalindrome("ABcdA");
     ASSERT_FALSE(actual);
 }
+
+TEST(PracticeTest, sort_increasing_first)
+{
+    Practice obj;
+		bool actual;
+		obj.sortDescending(1,3,5);
+    if ( (obj.first >= obj.second) || (obj.second >= obj.third) ) {
+				ASSERT_TRUE(actual);
+		}
+		else {
+			ASSERT_FALSE(actual);
+		}
+}
