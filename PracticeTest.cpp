@@ -77,6 +77,13 @@ TEST(PracticeTest, is_palindromeFiveLetterMix)
     ASSERT_TRUE(actual);
 }
 
+TEST(PracticeTest, is_NotPalFourLetterMix)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("aaDA");
+    ASSERT_FALSE(actual);
+}
+
 TEST(PracticeTest, is_NotPalFiveLetterMix)
 {
     Practice obj;
