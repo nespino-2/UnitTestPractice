@@ -98,7 +98,7 @@ TEST(PracticeTest, sort_increasing_first)
 		int frst = 1;
 		int scnd = 3;
 		int thrd = 5;
-		obj.sortDescending(1,3,5);
+		obj.sortDescending(frst,scnd,thrd);
     if ( (frst >= scnd) || (scnd >= thrd) ) {
 				ASSERT_TRUE(actual);
 		}
