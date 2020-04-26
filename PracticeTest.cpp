@@ -48,3 +48,24 @@ TEST(PracticeTest, is_palindromefourLetter)
     bool actual = obj.isPalindrome("abba");
     ASSERT_TRUE(actual);
 }
+
+TEST(PracticeTest, is_palindrome_oneLetterCaps)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("A");
+    ASSERT_TRUE(actual);
+}
+
+TEST(PracticeTest, is_palindrome_threeLetterCaps)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("CDC");
+    ASSERT_TRUE(actual);
+}
+
+TEST(PracticeTest, is_palindromefourLetterCaps)
+{
+    Practice obj;
+    bool actual = obj.isPalindrome("AbBa");
+    ASSERT_TRUE(actual);
+}
